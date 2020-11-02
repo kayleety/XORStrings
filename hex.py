@@ -25,12 +25,12 @@ def xor(mode, key, inp):
         else:
             hexVal = hex(chr(ord(inp[i]) ^ ord(key[i])))
             final += hexVal[2:] + " "
+    print(final)
 
 #main method
 if __name__ == "__main__":
     mode = sys.argv[1]
     keyfile = sys.argv[2]
-
     inpfile = sys.argv[3]
     key = open(keyfile).read()[:-1] #removes the mandatory \n at the end of the file to support one line messages.
     inp = open(inpfile).read()[:-1] #removes the mandatory \n at the end of the file to support one line messages.
