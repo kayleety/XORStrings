@@ -13,6 +13,10 @@ def xor(mode, key, inp):
     index = 0
 
     while (len(key) < len(inp)): #method to make key as long as inp
+        key += word[index]
+        if (index == len(word) - 1): #if the index exceeds the length of original key
+            index = 0
+
 
     final = ""
     for i in range(len(inp)): #XOR every pair of characters from key and inp
