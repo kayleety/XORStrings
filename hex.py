@@ -1,3 +1,11 @@
+'''
+Kaylee Yin
+Cybersecurity - Period 5
+November 2, 2020
+
+XOR Cipher
+'''
+
 import sys
 
 #main method
