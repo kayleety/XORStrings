@@ -9,6 +9,10 @@ XOR Cipher
 import sys
 
 def xor(mode, key, inp):
+    key = word
+    count = 0
+
+    
 
 #main method
 mode = sys.argv[1]
