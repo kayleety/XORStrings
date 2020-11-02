@@ -42,4 +42,7 @@ if __name__ == "__main__":
         print("key: "+key)
         print("inp: "+inp)
 
-    
+    if (mode == "human" or mode = "numOut"):
+        xor(mode, key, inp)
+    else:
+        print("Invalid mode. Correct modes: human or numOut")
