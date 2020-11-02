@@ -10,9 +10,12 @@ import sys
 
 def xor(mode, key, inp):
     key = word
-    count = 0
+    i = 0
 
-    
+    final = ""
+    for i in range(len(inp)): #XOR every pair of characters from key and inp
+        if (mode == "human"):
+            final += chr(ord(inp[i]) ^ ord(key[i]))
 
 #main method
 mode = sys.argv[1]
