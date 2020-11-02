@@ -16,7 +16,8 @@ def xor(mode, key, inp):
         key += word[index]
         if (index == len(word) - 1): #if the index exceeds the length of original key
             index = 0
-
+        else:
+            index += 1
 
     final = ""
     for i in range(len(inp)): #XOR every pair of characters from key and inp
