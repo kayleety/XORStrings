@@ -5,7 +5,6 @@ November 2, 2020
 
 XOR Cipher
 '''
-
 import sys
 
 def xor(mode, key, inp):
@@ -42,7 +41,7 @@ if __name__ == "__main__":
         print("key: "+key)
         print("inp: "+inp)
 
-    if (mode == "human" or mode = "numOut"):
+    if (mode == "human" or mode == "numOut"):
         xor(mode, key, inp)
     else:
         print("Invalid mode. Correct modes: human or numOut")
