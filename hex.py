@@ -10,7 +10,9 @@ import sys
 
 def xor(mode, key, inp):
     key = word
-    i = 0
+    index = 0
+
+    while (len(key) < len(inp)): #method to make key as long as inp
 
     final = ""
     for i in range(len(inp)): #XOR every pair of characters from key and inp
@@ -18,7 +20,7 @@ def xor(mode, key, inp):
             final += chr(ord(inp[i]) ^ ord(key[i]))
         else:
             hexVal = hex(chr(ord(inp[i]) ^ ord(key[i])))
-            final += hexVal[2:] + " " 
+            final += hexVal[2:] + " "
 
 #main method
 mode = sys.argv[1]
