@@ -16,6 +16,9 @@ def xor(mode, key, inp):
     for i in range(len(inp)): #XOR every pair of characters from key and inp
         if (mode == "human"):
             final += chr(ord(inp[i]) ^ ord(key[i]))
+        else:
+            hexVal = hex(chr(ord(inp[i]) ^ ord(key[i])))
+            final += hexVal[2:] + " " 
 
 #main method
 mode = sys.argv[1]
