@@ -1,6 +1,5 @@
 import sys
 
-
 #main method
 mode = sys.argv[1]
 keyfile = sys.argv[2]
