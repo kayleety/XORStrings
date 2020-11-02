@@ -8,6 +8,8 @@ XOR Cipher
 
 import sys
 
+def xor(mode, key, inp):
+
 #main method
 mode = sys.argv[1]
 keyfile = sys.argv[2]
