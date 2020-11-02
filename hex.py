@@ -9,7 +9,7 @@ XOR Cipher
 import sys
 
 def xor(mode, key, inp):
-    key = word
+    word = key
     index = 0
 
     while (len(key) < len(inp)): #method to make key as long as inp
